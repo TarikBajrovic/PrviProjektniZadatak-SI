@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Registracija</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registracijska forma</h1>
+    <form action="pocetna.html">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+
+        <label for="nadimak">Nadimak:</label>
+        <input type="text" id="nadimak" name="nadimak" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="datum_rodenja">Datum rođenja:</label>
+        <input type="date" id="datum_rodenja" name="datum_rodenja" required>
+
+        <label>Spol:</label>
+        <label for="spol_m">
+            <input type="radio" id="spol_m" name="spol" value="Muško" required> Muško
+        </label>
+        <label for="spol_z">
+            <input type="radio" id="spol_z" name="spol" value="Žensko" required> Žensko
+        </label>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+
+        <label for="adresa">Adresa:</label>
+        <input type="text" id="adresa" name="adresa" required>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
